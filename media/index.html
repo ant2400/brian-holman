@@ -63,112 +63,45 @@
 <div id="page-media">
 <div id="textbox-media">
 
-<!-- Flowplayer -->
+<span class="pagesubheading">Media</span>
+<h3 class="bodytext">Below you'll find some videos of Brian's <a href="#conducting">conducting</a> and <a href="#piano">piano</a> work</h3>
 
-<a id="player" class="player">
-	<img src="../images/flowplayer/video_still.png" />
-</a>
- 
-<div id="playlist_wrap">
-
-	<a class="prev"></a>
-	
-	<div id="pl"> 
+	<div id="conducting">
 		
-		<div class="entries">
-				
-			<div class="page">
-				
-                		<a href="Art of Eating_x264.mov"><br />
-					Jeffrey Leppendorf: <i>The Art of Eating</i><br />
-                    May, 2010<br />
-					<em>2:48 min</em>	
-				</a>
-				
-                <a href="Coffee Cantata_x264.mov"><br />
-					J.S. Bach <i>Coffee Cantata</i><br />
-                    May, 2010<br />
-					<em>3:10 min</em>	
-				</a>
-                
-                <a href="Rigoletto_x264.mov"><br />
-					Giuseppe Verdi: <i>Rigoletto</i><br />
-                    November, 2007<br />
-					<em>4:21 min</em>	
-				</a>
-                
-                
-                
-            </div>
-            
-            <div class="page">
-				 <a href="Regina_Opera_Brooklyn_Independent_Television_x264.mov"><br />
-					Caught in the Act: <i>Brooklyn Independent Television</i><br />
-                    Regina Opera<br />
-					<em>7:56 min</em>
-				</a>
-                
-                <a href="Lucia_x264.mov"><br />
-					Gaetano Donizetti: <i>Lucia di Lammermoor</i><br />
-                    November, 2008<br />
-					<em>8:33 min</em>
-				</a>
-				
-				<a href="Brahms_x264.mov"><br />
-					Johannes Brahms: Symphony No. 1<br />
-                    I. <i>Un poco sostenuto -- Allegro -- Meno Allegro</i><br />
-                    June, 2008<br />
-					<em>3:48 min</em>	
-				</a>
-		
-			</div>
-			
-		</div>
-		 
 	</div>
-	
-	<a class="next"></a>
- 
-</div>
- 
-<br clear="all" />
 
-<!-- Flowplayer Code -->
- 
-<script> 
- 
-$(function() {
-	// setup scrolling for the playlist elements
-	$("#pl").scrollable({ circular: true });
-	
-	// setup player 
-	$f("player", "../flowplayer/flowplayer-3.2.5.swf",{
-	
-		plugins: {
-		controls: {
-			url: '../flowplayer/flowplayer.controls-3.2.3.swf',
-			playlist: true,
-			backgroundColor: "transparent",
-			backgroundGradient: "none",
-			sliderColor: '#FFFFFF',
-			sliderBorder: '1.5px solid rgba(160,160,160,0.7)',
-			volumeSliderColor: '#FFFFFF',
-			volumeBorder: '1.5px solid rgba(160,160,160,0.7)',
+	<div id="piano">
+		<div class="vidEmbed">
+			<p class="title"></p>
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/XqNwZn16AJk" frameborder="0" allowfullscreen></iframe>
+			<p class="caption bodytext">Aprile Millo, soprano; Francisco Casanova, tenor</p>
+		</div>
 
-			timeColor: '#ffffff',
-			durationColor: '#535353',
-			metaData: false,
-			
-			tooltipColor: 'rgba(255, 255, 255, 0.7)',
-			tooltipTextColor: '#000000'
-		}		
-	},
-	clip: {baseUrl: 'http://www.brian-holman.com/media'} 
-	// the iPad plugin and the playlist plugin
-	}).ipad().playlist("div.entries");
-	
-});
-</script>
+		<div class="vidEmbed">
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/wnj9_1u4NLQ" frameborder="0" allowfullscreen></iframe>
+			<p class="caption bodytext">Sara Murphy, mezzo-soprano; Francisco Casanova, tenor</p>
+		</div>
+
+		<div class="vidEmbed">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/BBdwli1ETDw" frameborder="0" allowfullscreen></iframe>
+			<p class="caption bodytext">April Evans, soprano</p>
+		</div>
+
+		<div class="vidEmbed">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/AP3sWJH83aU" frameborder="0" allowfullscreen></iframe>
+			<p class="caption bodytext">Melissa Bijur, soprano</p>
+		</div>
+
+		<div class="vidEmbed">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/pviD6JgQMzA" frameborder="0" allowfullscreen></iframe>
+			<p class="caption bodytext">Gustavo Ahualli, baritone</p>
+		</div>
+
+		<div class="vidEmbed">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/vwA5iFCAu_M" frameborder="0" allowfullscreen></iframe>
+			<p class="caption bodytext">Salvatore Fisichella and Andrew Owens, tenors</p>
+		</div>
+	</div>
 
 </div>
 </div>

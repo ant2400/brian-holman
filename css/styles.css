@@ -68,6 +68,16 @@ body
 	background: url(../images/backgrounds/background-media.jpg) no-repeat center;
 }
 
+#page-media .bodytext a {
+	color: #D6B6EA;
+	text-decoration: none;
+}
+
+#page-media .bodytext a:hover, 
+#page-media .bodytext a:visited {
+	color: #ADA5FF;
+}
+
 #page-photos {	
 	position: absolute; 
 	left: 50%;
@@ -108,7 +118,10 @@ body
 #textbox-media {
 	margin: 75px 0px 0px 225px;
 	padding-top: 10px;
-	background: url(../images/backgrounds/video-box.png) no-repeat;	
+	padding-left: 20px;
+	background: url(../images/backgrounds/video-box.png) no-repeat;
+	height: 450px;
+	overflow: auto;	
 }
 
 #textbox-calendar {
@@ -550,6 +563,10 @@ a.player img {
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 	color: #FFFFFF;
 	line-height:1.3em;
+}
+
+h3.bodytext {
+	font-size: 14px;
 }
 
 .bolder {
