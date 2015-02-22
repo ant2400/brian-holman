@@ -78,6 +78,14 @@ body
 	color: #ADA5FF;
 }
 
+#page-media .vidEmbed {
+	margin-bottom: 35px;
+}
+
+#page-media .vidEmbed .title {
+	font-size: 18px;
+}
+
 #page-photos {	
 	position: absolute; 
 	left: 50%;
@@ -85,6 +93,17 @@ body
 	width: 1000px;
 	height: 650px;
 	background: url(../images/backgrounds/background-page4.jpg) no-repeat center;
+}
+
+#page-photos #phototable a {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: #D6B6EA;
+	text-decoration: none;
+}
+
+#page-photos #phototable a:hover,
+#page-photos #phototable a:visited {
+	color: #ADA5FF;
 }
 
 #page-contact {	
@@ -120,7 +139,8 @@ body
 	margin: 75px 0px 0px 225px;
 	padding-top: 10px;
 	padding-left: 20px;
-	background: url(../images/backgrounds/video-box.png) no-repeat;
+	background: url(../images/backgrounds/video-box.png) repeat;
+	width: 580px;
 	height: 450px;
 	overflow: auto;	
 }
