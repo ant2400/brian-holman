@@ -109,10 +109,11 @@ body
 }
 
 #textbox-photos {
-	width: 400px;
+	width: 510px;
 	height: 575px;
+	overflow: auto;
 	margin: 58px 0px 0px 115px;
-	background: url(../images/backgrounds/text-box.gif) no-repeat;
+	background: url(../images/backgrounds/text-box.jpg) repeat;
 }
 
 #textbox-media {
