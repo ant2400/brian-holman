@@ -149,28 +149,32 @@ body
 	width: 400px;
 	height: 478px;
 	margin: 25px 0px 0px 550px;
-	background: url(../images/music/005-trans.gif) no-repeat;
+	background: rgb(46, 46, 46);
+	/* background: url(../images/music/005-trans.gif) no-repeat;*/
 }
 
 #textbox-news-press {
 	width: 400px;
 	height: 478px;
 	margin: 25px 0px 0px 100px;
-	background: url(../images/music/007-trans.gif) no-repeat;
+	background: rgb(46, 46, 46);
+	/*background: url(../images/music/007-trans.gif) no-repeat;*/
 }
 
 #textbox-testimonials {
 	width: 400px;
 	height: 478px;
 	margin: 25px 0px 0px 100px;
-	background: url(../images/music/006-trans.gif) no-repeat;
+	background: rgb(46, 46, 46);
+	/*background: url(../images/music/006-trans.gif) no-repeat;*/
 }
 
 #textbox-contact {
 	width: 400px;
 	height: 478px;
 	margin: 25px 0px 0px 100px;
-	background: url(../images/music/001-trans.gif) no-repeat;
+	background: rgb(46, 46, 46);
+	/*background: url(../images/music/001-trans.gif) no-repeat;*/
 }
 
 #textbox-contact p {	

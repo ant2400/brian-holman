@@ -12,6 +12,8 @@
 <script type="text/javascript" src="../js/kwicks.js" language="JavaScript"></script>
 <script type="text/javascript" src="../js/custom.js" language="JavaScript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript" src="..js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="..js/jquery.mousewheel.min.js"></script>
 <link href="../css/styles.css" rel="stylesheet" type="text/css" />
 
 <!-- Google Analytics -->
@@ -28,26 +30,6 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-<script type="text/javascript">
-<!--
-function MM_validateForm() { //v4.0
-  if (document.getElementById){
-    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
-    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
-      if (val) { nm=val.name; if ((val=val.value)!="") {
-        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
-          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
-        } else if (test!='R') { num = parseFloat(val);
-          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
-          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
-            min=test.substring(8,p); max=test.substring(p+1);
-            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
-      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
-    } if (errors) alert('The following error(s) occurred:\n'+errors);
-    document.MM_returnValue = (errors == '');
-} }
-//-->
 </script>
 </head>
 <body>
@@ -66,76 +48,81 @@ function MM_validateForm() { //v4.0
 
  <ul class="kwicks">  
      <li id="kwick1"><a href="../biography/index.html">biography</a></li>  
-     <li id="kwick2"><a href="../calendar/index.html">calendar</a></li>  
+     <li id="kwick2"><a href="index.html">calendar</a></li>  
      <li id="kwick3"><a href="../news-press/index.html">news & press</a></li>  
      <li id="kwick4"><a href="../media/index.html">media</a></li>
      <li id="kwick5"><a href="../photos/index.html">photos</a></li>  
-     <li id="kwick6"><a href="../testimonials/index.html">testimonials</a></li> 
-     <li id="kwick7"><a href="index.html">contact</a></li>     
+     <li id="kwick6"><a href="../testimonials/index.html">repertoire</a></li> 
+    <li id="kwick7"><a href="../contact/index.html">contact</a></li>      
  </ul> 
 </div>
 
 <!-- Page -->
 
-<div id="page-contact">
-<div id="textbox-contact">
+<div id="page-calendar">
+<div id="textbox-calendar">
 <div id="header-textbox">
-<span class="pagesubheading">Contact</span>
+<span class="pagesubheading">Calendar</span>
 </div>
+<div id="customScrollBox">
+	<div class="container">
+    	<div class="content">
+<p><span class="bodytext">
 
-<p><span class="bodytext">If you would like information on my availability, please email me at <a href="mailto:info@brian-holman.com" target="_blank">info@brian-holman.com</a> or fill out the form below.</span></p>
+<strong><em>Upcoming</em></strong><br /><br />
 
-<!-- Contact Form -->
+<strong>Sunday, February 21, 2016, 4:00 p.m.</strong><br />
+Fordham at Four: Elgar, Wagner, Ginestera, Burleigh<br />
+Karmesha Peake, mezzo soprano<br />
+<a href="https://www.facebook.com/events/218370671832687/" target="-blank">More info</a><br /><br />
 
-<form action="http://www.brian-holman.com/secure/formmail.php" method="POST" name="form" id="form">
-<input type="hidden" name="good_url" value="http://www.brian-holman.com/contact/thankyou.html" /> 
-<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER">
-<input type="hidden" name="recipients" value="info@brian-holman.com" />
-<input type="hidden" name="subject" value="Contact Form Submission" />
-<input type="hidden" name="mail_options" value="FromAddr = webmaster@brian-holman.com" />
-<input type="hidden" name="derive_fields" value=" date=%date%,time=%hour12%.%':'%.%min% + %AMPM%,day=%dayname%,timezone=%tzname%" />
-<table border="0" id="formtable">
-  
-  <tr>
-    <td width="150" align="right" class="bodytext"><font color="#FF0000">Required Fields *</font></td>
-    <td colspan="2" align="left">&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="right"><span class="bodytext">First Name:</span><span class="required">*</span></td>
-    <td colspan="2"><input name="first_name" class="formfieldtext" type="text" id="first_name" size="30" maxlength="100" /></td>
-  </tr>
-  <tr>
-    <td align="right"><span class="bodytext">Last Name:</span><span class="required">*</span></td>
-    <td colspan="2">
-      <input name="last_name" class="formfieldtext" type="text" id="last_name" size="30" maxlength="100" /></td>
-  </tr>
-  <tr>
-    <td align="right"><span class="bodytext">Telephone Number:</span></td>
-    <td colspan="2"><input name="phone" class="formfieldtext" type="text" id="phone" size="25" maxlength="50" /></td>
-  </tr>
-  <tr>
-    <td align="right"><span class="bodytext">Email Address:</span><span class="required">*</span></td>
-    <td colspan="2"><input name="email" class="formfieldtext" type="text" id="email" size="30" maxlength="50" /></td>
-  </tr>
-  <tr>
-    <td align="right"><span class="bodytext">Message:</span><span class="required">*</span></td>
-    <td colspan="2"><textarea name="message" class="formfieldtext" cols="29" rows="7" id="message"></textarea></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td colspan="2">&nbsp;</td>
-  </tr>
-  
-  <tr>
-    <td></td>
-    <td width="79"><input name="Submit2" id="Submit" type="image" src="../images/icons/submit_button.png" alt="Submit" onclick="MM_validateForm('first_name','','R','last_name','','R','email','','R','message','','R');return document.MM_returnValue" value="Submit" /></td> 
-    <td width="151" align="left">
-      <input type="image" src="../images/icons/reset_button.png" alt="Reset" name="Reset" value="Reset" /></td>
-    </tr>
-</table>
-  <input type="hidden" name="MM_insert" value="form" />
-</form>
+<strong>Sunday, April 24, 2016, 3:00 p.m.</strong><br />
+Music on Madison: “An Afternoon of Opera”<br />
+Kathy Favazza, soprano<br />
+Sara Murphy, mezzo soprano<br />
+John Tiranno, tenor<br />
+<a href="http://www.mapc.com/calendar/2016/04/24/music-on-madison-an-afternoon-of-opera/" target="-blank">More info</a><br /><br />
 
+<strong>Wednesday, May 11, 2016, 12:00 p.m.</strong><br />
+Interchurch Center Noonday Concerts<br />
+Carla Wesby, soprano<br />
+<a href="http://interchurch-center.org/concert-series/" target="-blank">More info</a><br /><br />
+
+<strong><em>Previous</em></strong><br /><br />
+
+Puccini: <em>Tosca</em><br />
+Stella Zambalis, Ta'u Pupu'a, Jason Stearns<br />
+Martha Cardona Theater Orchestra and Chorus<br />
+Merkin Concert Hall, New York<br />
+
+Delinger: <em>Amelia Lost</em><br />
+Marble City Opera<br />
+Kathryn Frady, soprano<br />
+James Marvel, director<br />
+National Opera Center, New York<br /><br />
+
+An Evening of Opera and Christmas Delights<br />
+Amine J. Hachem, tenor<br />
+Beth Holub, viola<br />
+Matthew Willis, sax<br />
+Bambam Rodriguez, bass<br />
+Ismael Baiz, percussion<br />
+CUNY Graduate Center, New York<br /><br />
+
+Lovers' Quarrels - A Concert of Opera's Most Famous Duets<br />
+Jodi Karem, mezzo soprano<br />
+Nicholas Simpson, tenor<br />
+Brooklyn, New York<br /><br />
+
+
+
+</span></p>
+        </div>
+	</div>
+    <div id="dragger_container">
+    	<div id="dragger"></div>
+    </div>
+</div>
 </div>
 </div>
 
@@ -147,7 +134,7 @@ function MM_validateForm() { //v4.0
 	<tr>
 		<td width="225" align="left" class="footernavtext">Copyright &copy; 2010 Brian-Holman.com</td>
 	  <td width="10" align="center" class="footernavtext">|</td>
-		<td width="50" align="center" class="footernavtext"><a href="index.html" target="_parent">Contact</a></td>
+		<td width="50" align="center" class="footernavtext"><a href="../contact/index.html" target="_parent">Contact</a></td>
 	  <td width="10" align="center" class="footernavtext">|</td>
 		<td width="705">
 
@@ -163,5 +150,114 @@ function MM_validateForm() { //v4.0
 </table>
  
 </div> 
+
+<!-- Scrollbox Code -->
+
+<script>
+$(window).load(function() {
+	$customScrollBox=$("#customScrollBox");
+	$customScrollBox_container=$("#customScrollBox .container");
+	$customScrollBox_content=$("#customScrollBox .content");
+	$dragger_container=$("#dragger_container");
+	$dragger=$("#dragger");
+	
+	CustomScroller();
+	
+	function CustomScroller(){
+		$customScrollBox.height=400;
+		$dragger_container.height=380;
+		visibleHeight=380;
+		if($customScrollBox_container.height()>visibleHeight){ //custom scroll depends on content height
+			$dragger_container,$dragger.css("display","block");
+			totalContent=$customScrollBox_content.height();
+			draggerContainerHeight=380;
+			animSpeed=400; //animation speed
+			easeType="easeOutCirc"; //easing type
+			bottomSpace=1.05; //bottom scrolling space
+			targY=0;
+			draggerHeight=$dragger.height();
+			$dragger.draggable({ 
+				axis: "y", 
+				containment: "parent", 
+				drag: function(event, ui) {
+					Scroll();
+				}, 
+				stop: function(event, ui) {
+					DraggerOut();
+				}
+			});
+
+			//scrollbar click
+			$dragger_container.click(function(e) {
+				var mouseCoord=(e.pageY - $(this).offset().top);
+				var targetPos=mouseCoord+$dragger.height();
+				if(targetPos<draggerContainerHeight){
+					$dragger.css("top",mouseCoord);
+					Scroll();
+				} else {
+					$dragger.css("top",draggerContainerHeight-$dragger.height());
+					Scroll();
+				}
+			});
+
+			//mousewheel
+			$(function($) {
+				$customScrollBox.bind("mousewheel", function(event, delta) {
+					vel = Math.abs(delta*10);
+					$dragger.css("top", $dragger.position().top-(delta*vel));
+					Scroll();
+					if($dragger.position().top<0){
+						$dragger.css("top", 0);
+						$customScrollBox_container.stop();
+						Scroll();
+					}
+					if($dragger.position().top>draggerContainerHeight-$dragger.height()){
+						$dragger.css("top", draggerContainerHeight-$dragger.height());
+						$customScrollBox_container.stop();
+						Scroll();
+					}
+					return false;
+				});
+			});
+
+			function Scroll(){
+				var scrollAmount=(totalContent-(visibleHeight/bottomSpace))/(draggerContainerHeight-draggerHeight);
+				var draggerY=$dragger.position().top;
+				targY=-draggerY*scrollAmount;
+				var thePos=$customScrollBox_container.position().top-targY;
+				$customScrollBox_container.stop().animate({top: "-="+thePos}, animSpeed, easeType); //with easing
+				//$customScrollBox_container.css("top",$customScrollBox_container.position().top-thePos+"px"); //no easing
+			}
+
+			//dragger hover
+			$dragger.mouseup(function(){
+				DraggerOut();
+			}).mousedown(function(){
+				DraggerOver();
+			});
+
+			function DraggerOver(){
+				$dragger.css("background", "url(../images/scrollbar/custom_scrollbar_bg_over.png)");
+			}
+
+			function DraggerOut(){
+				$dragger.css("background", "url(../images/scrollbar/custom_scrollbar_bg.png)");
+			}
+		} else { //hide custom scrollbar if content is short
+			$dragger,$dragger_container.css("display","none");
+		}
+	}
+
+	//resize browser window functions
+	$(window).resize(function() {
+		$dragger.css("top",0); //reset content scroll
+		$customScrollBox_container.css("top",0);
+		$customScrollBox.unbind("mousewheel");
+		CustomScroller();
+	});
+});
+</script>
+
+
 </body>
 </html>
